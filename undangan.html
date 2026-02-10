@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Rony & Istri Komputer</title>
+    <meta name="description" content="Undangan pernikahan digital Rony & Istri Komputer. Sabtu, 15 Maret 2026">
+    <meta name="keywords" content="undangan pernikahan, digital, Rony, Istri Komputer">
+    <meta property="og:title" content="Undangan Pernikahan Rony & Istri Komputer">
+    <meta property="og:description" content="Dengan penuh rasa syukur dan bahagia, kami mengundang Anda untuk berbagi kebahagiaan di hari pernikahan kami.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?w=600">
+    <meta property="og:url" content="https://undangan-rony.vercel.app">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+</head>
+<body>
+    <!-- Halaman Pertama (Cover) -->
+    <div class="invitation-card show" id="coverCard">
+        <h1 class="title">UNDANGAN PERNIKAHAN</h1>
+        
+        <div class="floral-decoration">
+            <i class="fas fa-heart"></i>
+        </div>
+        
+        <h2 class="couple-names">
+            Rony <span class="ampersand">&</span> Istri Komputer
+        </h2>
+        
+        <p class="message">
+            Dengan penuh rasa syukur dan bahagia, kami mengundang Bapak/Ibu/Saudara/i
+            untuk berbagi kebahagiaan di hari pernikahan kami.
+        </p>
+        
+        <div class="details">
+            <div class="date">
+                <i class="far fa-calendar-alt"></i>
+                <span><strong>Sabtu, 15 Maret 2026</strong></span>
+            </div>
+            <div class="time">
+                <i class="far fa-clock"></i>
+                <span><strong>Pukul 10.00 WIB - Selesai</strong></span>
+            </div>
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span><strong>Venue Pernikahan Digital</strong></span>
+            </div>
+        </div>
+        
+        <button class="open-btn" id="openInvitation">
+            BUKA UNDANGAN
+            <i class="fas fa-arrow-right"></i>
+        </button>
+        
+        <p class="footer-note">
+            *Merupakan suatu kehormatan dan kebahagiaan bagi kami 
+            apabila Bapak/Ibu/Saudara/i berkenan hadir memberikan doa restu
+        </p>
+    </div>
+
+    <!-- Halaman Kedua (Full Invitation) -->
+    <div class="full-invitation" id="fullInvitation">
+        <div class="full-card">
+            <button class="btn-back" id="backButton">
+                <i class="fas fa-arrow-left"></i> Kembali
+            </button>
+            
+            <h1 class="title" style="margin-top: 20px;">UNDANGAN PERNIKAHAN</h1>
+            
+            <div class="floral-decoration">
+                <i class="fas fa-heart"></i> <i class="fas fa-ring"></i> <i class="fas fa-heart"></i>
+            </div>
+            
+            <h2 class="couple-names">
+                Rony <span class="ampersand">&</span> Istri Komputer
+            </h2>
+            
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Hari</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Jam</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Menit</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Detik</span>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><i class="fas fa-info-circle"></i> Detail Acara</h3>
+                <div class="details">
+                    <div class="date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span><strong>Sabtu, 15 Maret 2026</strong></span>
+                    </div>
+                    <div class="time">
+                        <i class="far fa-clock"></i>
+                        <span><strong>Pukul 10.00 WIB - Selesai</strong></span>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span><strong>Live Streaming via Zoom Meeting</strong></span>
+                    </div>
+                </div>
+                <p style="margin-top: 15px; color: #795548;">
+                    Link Zoom akan dikirimkan via WhatsApp 1 hari sebelum acara
+                </p>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><i class="fas fa-users"></i> Susunan Acara</h3>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="padding: 10px 0; border-bottom: 1px dashed #d7ccc8;">
+                        <i class="fas fa-play-circle" style="color: #8d6e63; margin-right: 10px;"></i>
+                        <strong>09.30 - 10.00</strong> : Registrasi Digital
+                    </li>
+                    <li style="padding: 10px 0; border-bottom: 1px dashed #d7ccc8;">
+                        <i class="fas fa-play-circle" style="color: #8d6e63; margin-right: 10px;"></i>
+                        <strong>10.00 - 10.30</strong> : Pembukaan & Sambutan
+                    </li>
+                    <li style="padding: 10px 0; border-bottom: 1px dashed #d7ccc8;">
+                        <i class="fas fa-play-circle" style="color: #8d6e63; margin-right: 10px;"></i>
+                        <strong>10.30 - 11.30</strong> : Akad Nikah
+                    </li>
+                    <li style="padding: 10px 0; border-bottom: 1px dashed #d7ccc8;">
+                        <i class="fas fa-play-circle" style="color: #8d6e63; margin-right: 10px;"></i>
+                        <strong>11.30 - 12.30</strong> : Foto Session Virtual
+                    </li>
+                    <li style="padding: 10px 0;">
+                        <i class="fas fa-play-circle" style="color: #8d6e63; margin-right: 10px;"></i>
+                        <strong>12.30 - Selesai</strong> : Ramah Tamah Virtual
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><i class="fas fa-gift"></i> Amplop Digital</h3>
+                <p style="margin-bottom: 20px; color: #795548;">
+                    Bagi yang ingin memberikan tanda kasih, dapat melalui:
+                </p>
+                <div class="qrcode-container">
+                    <div id="qrcode"></div>
+                    <p style="margin-top: 15px; font-size: 14px; color: #5d4037;">
+                        Scan QR code untuk transfer
+                    </p>
+                    <p style="margin-top: 5px; font-size: 12px; color: #8d6e63;">
+                        Bank BCA: 1234 5678 90 (a.n Rony)
+                    </p>
+                </div>
+            </div>
+            
+            <div class="rsvp-form">
+                <h3 class="section-title"><i class="fas fa-check-circle"></i> Konfirmasi Kehadiran</h3>
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" placeholder="Masukkan nama lengkap">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nomor WhatsApp</label>
+                    <input type="tel" id="phone" placeholder="0812 3456 7890">
+                </div>
+                <div class="form-group">
+                    <label for="attendance">Konfirmasi Kehadiran</label>
+                    <select id="attendance">
+                        <option value="">Pilih opsi</option>
+                        <option value="hadir">Ya, saya akan hadir</option>
+                        <option value="tidak-hadir">Maaf, tidak dapat hadir</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ucapan / Doa</label>
+                    <textarea id="message" rows="3" placeholder="Tulis ucapan dan doa untuk mempelai..."></textarea>
+                </div>
+                <button class="btn-submit" id="submitRsvp">
+                    <i class="fas fa-paper-plane"></i> Kirim Konfirmasi
+                </button>
+            </div>
+            
+            <div class="footer-note" style="text-align: center; margin-top: 40px;">
+                <p>"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir."</p>
+                <p style="margin-top: 10px;"><strong>(QS. Ar-Rum: 21)</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Button (dinamis) -->
+    <button id="shareButton" class="share-button">
+        <i class="fas fa-share-alt"></i> Bagikan
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
